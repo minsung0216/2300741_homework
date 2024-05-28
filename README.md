@@ -29,7 +29,6 @@ class 이름Publisher(Node):
         self.get_logger().info('Published message: {0}'.format(msg.data))
         self.count += 1
 
-
 def main(args=None):
     rclpy.init(args=args)
     node = 이Publisher()
@@ -40,7 +39,6 @@ def main(args=None):
     finally:
         node.destroy_node()
         rclpy.shutdown()
-
 
 if __name__ == '__main__':
     main()
@@ -77,7 +75,6 @@ class 이름Subscriber(Node):
     def subscribe_topic_message(self, msg):
         self.get_logger().info('Received message: {0}'.format(msg.data))
 
-
 def main(args=None):
     rclpy.init(args=args)
     node = 이름Subscriber()
@@ -88,7 +85,6 @@ def main(args=None):
     finally:
         node.destroy_node()
         rclpy.shutdown()
-
 
 if __name__ == '__main__':
     main()
