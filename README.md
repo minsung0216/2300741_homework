@@ -44,9 +44,11 @@ if __name__ == '__main__':
     main()
 입력
 -----------------------------------------------------------------------------------------------------------------------------
-# 만약 이름_publisher.py파일이 없다면 ~/robot_ws/src/my_first_ros_rclpy_pkg/my_first_ros_rclpy_pkg위치에서 
+## 만약
+이름_publisher.py파일이 없다면 ~/robot_ws/src/my_first_ros_rclpy_pkg/my_first_ros_rclpy_pkg위치에서 
 touch 이름_publisher.py
-그 다음 ~/robot_ws/src/my_first_ros_rclpy_pkg/my_first_ros_rclpy_pkg위치에서 이름_subscriber.py파일을 만들고 이때 
+# 그 다음 
+~/robot_ws/src/my_first_ros_rclpy_pkg/my_first_ros_rclpy_pkg위치에서 이름_subscriber.py파일을 만들고 이때 
 이름은 이름Publisher 에 들어있는 이름과 같아야 된다
 gedit 이름_subscriber.py
 을 한 후
