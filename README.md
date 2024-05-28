@@ -41,10 +41,10 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-을 입력 한다.
+입력
+-----------------------------------------------------------------------------------------------------------------------------
 # 만약 이름_publisher.py파일이 없다면 ~/robot_ws/src/my_first_ros_rclpy_pkg/my_first_ros_rclpy_pkg위치에서 
 touch 이름_publisher.py
------------------------------------------------------------------------------------------------------------------------------
 그 다음 ~/robot_ws/src/my_first_ros_rclpy_pkg/my_first_ros_rclpy_pkg위치에서 이름_subscriber.py파일을 만들고 이때 
 이름은 이름Publisher 에 들어있는 이름과 같아야 된다
 gedit 이름_subscriber.py
@@ -85,6 +85,7 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+입력
 -----------------------------------------------------------------------------------------------------------------------------
 을 다 입력했다면 각각
 ros2 run my_first_ros_rclpy_pkg 이름_subscriber 과 ros2 run my_first_ros_rclpy_pkg 이름_publisher을 사용하면 된다.
