@@ -31,7 +31,7 @@ class 이름Publisher(Node):
         
 def main(args=None):
 rclpy.init(args=args)
-node = 이Publisher()
+node = 이름Publisher()
     try:
         rclpy.spin(node)
         
