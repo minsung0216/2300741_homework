@@ -30,9 +30,8 @@ class 이름Publisher(Node):
         self.count += 1
         
 def main(args=None):
-    rclpy.init(args=args)
-    node = 이Publisher()
-    
+rclpy.init(args=args)
+node = 이Publisher()
     try:
         rclpy.spin(node)
         
