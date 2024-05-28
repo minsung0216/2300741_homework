@@ -21,14 +21,12 @@ class 이름Publisher(Node):
         self.이름_publisher = self.create_publisher(String, '이름', qos_profile)
         self.timer = self.create_timer(1, self.publish_이름_msg)
         self.count = 0
-
     def publish_이름_msg(self):
         msg = String()
         msg.data = '이름: {0}'.format(self.count)
         self.이름_publisher.publish(msg)
         self.get_logger().info('Published message: {0}'.format(msg.data))
         self.count += 1
-
 def main(args=None):
     rclpy.init(args=args)
     node = 이Publisher()
@@ -39,10 +37,10 @@ def main(args=None):
     finally:
         node.destroy_node()
         rclpy.shutdown()
-
 if __name__ == '__main__':
     main()
-입력
+    
+
 -----------------------------------------------------------------------------------------------------------------------------
 ## 만약
 이름_publisher.py파일이 없다면 ~/robot_ws/src/my_first_ros_rclpy_pkg/my_first_ros_rclpy_pkg위치에서 
@@ -71,10 +69,8 @@ class 이름Subscriber(Node):
             '이름',
             self.subscribe_topic_message,
             qos_profile)
-
     def subscribe_topic_message(self, msg):
         self.get_logger().info('Received message: {0}'.format(msg.data))
-
 def main(args=None):
     rclpy.init(args=args)
     node = 이름Subscriber()
@@ -85,9 +81,9 @@ def main(args=None):
     finally:
         node.destroy_node()
         rclpy.shutdown()
-
 if __name__ == '__main__':
     main()
+    
 ----------------------------------------------------------------------------------------------------------------------------
 ##실행 해보기
 -----------------------------------------------------------------------------------------------------------------------------
